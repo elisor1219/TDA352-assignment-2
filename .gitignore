@@ -1,3 +1,6 @@
+# Remove the value.txt file
+*.txt
+
 # Compiled class file
 *.class
 
