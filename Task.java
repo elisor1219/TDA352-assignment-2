@@ -1,7 +1,7 @@
 /**
  * Caluclates if "g" generates the whole group Z_p^*
  */
-public class Task1 {
+public class Task {
     public static void main(String[] args) {
         System.out.println("----------Start Test----------");
         int p = 19;
@@ -11,6 +11,13 @@ public class Task1 {
             findStuff(p, g);
             System.out.println(g + "^" + i + " mod " + p + " = " + findStuff(p, g)[i]);
         }
+
+        System.out.println("----------New Test----------");
+        int[] test = findStuff(p, i);
+        for (int j = 0; j < test.length; j++) {
+            System.out.println(i + "^" + j + " mod " + p + " = " + test[j]);
+        }
+
         
         
         /*
